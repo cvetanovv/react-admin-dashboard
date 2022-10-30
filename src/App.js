@@ -25,6 +25,7 @@ function App() {
                     <Sidebar />
                     <main className="content">
                         <Topbar />
+                        <Dashboard />
                         <Routes>
                             <Route path="/" element={Dashboard} />
                         </Routes>
