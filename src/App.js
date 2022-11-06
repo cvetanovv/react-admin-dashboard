@@ -26,8 +26,10 @@ function App() {
                     <main className="content">
                         <Topbar />
                         <Dashboard />
+                        <Team />
                         <Routes>
                             <Route path="/" element={Dashboard} />
+                            <Route path="/team" element={Team} />
                         </Routes>
                     </main>
                 </div>
