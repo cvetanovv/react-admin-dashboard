@@ -148,7 +148,7 @@ const Sidebar = () => {
                             title="Manage Team"
                             to="/team"
                             icon={<PeopleOutlinedIcon />}
-                            selected={selected}
+                            selected="{selected}"
                             setSelected={setSelected}
                         />
                         <Item

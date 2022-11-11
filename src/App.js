@@ -6,7 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import Dashboard from "./scenes/dashboard";
 import Team from "./scenes/team/Team";
 // import Invoices from "./scenes/invoices";
-// import Contacts from "./scenes/contacts";
+import Contacts from "./scenes/contacts/Contacts";
 // import Bar from "./scenes/bar";
 // import Form from "./scenes/form";
 // import Line from "./scenes/line";
@@ -25,11 +25,10 @@ function App() {
                     <Sidebar />
                     <main className="content">
                         <Topbar />
-                        <Dashboard />
-                        <Team />
                         <Routes>
-                            <Route path="/" element={Dashboard} />
-                            <Route path="/team" element={Team} />
+                            <Route path="/" element={<Dashboard />} />
+                            <Route path="/team" element={<Team />} />
+                            <Route path="/contacts" element={<Contacts />} />
                         </Routes>
                     </main>
                 </div>
